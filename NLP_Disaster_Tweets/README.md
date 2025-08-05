@@ -1,6 +1,7 @@
 # NLP Disaster Tweet Classification
 
 ## Table of Contents
+
 - [Project Overview](#project-overview)
 - [Dataset](#dataset)
 - [Project Structure](#project-structure)
@@ -73,6 +74,7 @@ dataset_list.txt
 ## Preprocessing and Data Variants
 
 To test different cleaning strategies, we created **30 dataset variants** by:
+
 - Lowercasing, stemming, lemmatization
 - Removing emojis, mentions, hashtags selectively
 - Custom stopword filtering
@@ -80,6 +82,7 @@ To test different cleaning strategies, we created **30 dataset variants** by:
 Each baseline (`kept`, `dropped`, `prepended`) had 10 cleaning strategies (`v1` to `v10`).
 
 Example Variants:
+
 - `kept_v7_lowercase_words_only`: Kept only lowercase alphabetic tokens
 - `prepended_v4_stemmed`: Stemming applied, keywords prepended
 - `dropped_v1_basic_clean`: Basic stopword removal, punctuation stripped
@@ -91,6 +94,7 @@ Example Variants:
 ## Modeling Approach
 
 ### Baseline Models
+
 - Multinomial Naive Bayes (MNB)
 - Passive Aggressive Classifier (PA)
 - Logistic Regression (LR)
@@ -99,6 +103,7 @@ Example Variants:
 - Multi-Layer Perceptron (MLP Neural Net)
 
 ### Advanced Models
+
 - **BERT Base-Uncased**
 - **BERTweet Base** (trained on tweets)
 
@@ -108,16 +113,17 @@ Example Variants:
 
 We implemented **GridSearchCV** for each model with tailored search spaces:
 
-| Model | Key Parameters Tuned |
-|:------|:---------------------|
-| MNB | `alpha` (Laplace smoothing) |
-| Logistic Regression | `C`, `solver`, `penalty`, `max_iter` |
-| Passive Aggressive | `C`, `max_iter`, `tol` |
-| SVM | `C`, `kernel`, `gamma` |
-| KNN | `n_neighbors`, `weights`, `metric` |
-| MLP | `hidden_layer_sizes`, `activation`, `solver`, `alpha`, `learning_rate`, `early_stopping` |
+| Model               | Key Parameters Tuned                                                                     |
+| :------------------ | :--------------------------------------------------------------------------------------- |
+| MNB                 | `alpha` (Laplace smoothing)                                                              |
+| Logistic Regression | `C`, `solver`, `penalty`, `max_iter`                                                     |
+| Passive Aggressive  | `C`, `max_iter`, `tol`                                                                   |
+| SVM                 | `C`, `kernel`, `gamma`                                                                   |
+| KNN                 | `n_neighbors`, `weights`, `metric`                                                       |
+| MLP                 | `hidden_layer_sizes`, `activation`, `solver`, `alpha`, `learning_rate`, `early_stopping` |
 
 **Execution**:
+
 - Parallelized using HPC cluster (28 cores, 16GB RAM per job)
 - Managed with `run_pipeline_ht.sh` and array jobs
 
@@ -126,6 +132,7 @@ We implemented **GridSearchCV** for each model with tailored search spaces:
 ## Evaluation Metrics
 
 Each model was evaluated with:
+
 - **Accuracy**
 - **Precision**
 - **Recall**
@@ -139,6 +146,7 @@ Performance comparison was done **before** and **after** hypertuning.
 ## Results Summary
 
 ### Top-Performing Hypertuned Model
+
 - **Model**: Passive Aggressive Classifier
 - **Dataset**: `kept_v7_lowercase_words_only`
 - **Metrics**:
@@ -149,12 +157,14 @@ Performance comparison was done **before** and **after** hypertuning.
   - ROC AUC: 85.88%
 
 ### Key Insights
+
 - **Simple preprocessing** (lowercasing only) worked better than aggressive cleaning.
 - **Hyperparameter tuning** significantly boosted F1 scores across all models.
 - **Transformer models** (BERT/BERTweet) performed slightly better, but at high computational cost.
 - **PA Classifier** emerged as the best balance of performance and efficiency.
 
 Visual comparisons were created for:
+
 - Baseline vs. Tuned F1 Scores per Model
 - Baseline vs. Tuned F1 Scores per Dataset
 
@@ -162,14 +172,14 @@ Visual comparisons were created for:
 
 ## Tools and Technologies
 
-| Tool | Purpose |
-|:----|:--------|
-| Pandas | Data manipulation |
-| Scikit-learn | Modeling, GridSearchCV, evaluation |
-| NLTK | Tokenization, stemming |
-| Matplotlib, Seaborn | Visualization |
-| Hugging Face Transformers | Pretrained BERT models |
-| HPC Cluster | Parallelized model training and hypertuning |
+| Tool                      | Purpose                                     |
+| :------------------------ | :------------------------------------------ |
+| Pandas                    | Data manipulation                           |
+| Scikit-learn              | Modeling, GridSearchCV, evaluation          |
+| NLTK                      | Tokenization, stemming                      |
+| Matplotlib, Seaborn       | Visualization                               |
+| Hugging Face Transformers | Pretrained BERT models                      |
+| HPC Cluster               | Parallelized model training and hypertuning |
 
 ---
 
@@ -186,5 +196,3 @@ Visual comparisons were created for:
 > **Authors**: Sharon Colson, Thomas D. Robertson II, Caleb Smith, Tania Perdomo-Flores  
 > **Original Repository**: [GitHub Repo](https://github.com/CSC-4260-Advanced-Data-Science-Project/NLP_Disaster_Tweets)  
 > **Data Source**: [Kaggle - NLP with Disaster Tweets](https://www.kaggle.com/competitions/nlp-getting-started/data)
-
-

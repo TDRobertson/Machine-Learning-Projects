@@ -3,12 +3,6 @@
   <!-- <img alt="GIF" src="Resources/banner.gif" /> --->
 </div>
 
-<p align="center">
-  <a href="[https://github.com/TDRobertson/Machine-Learning-Projects/issues](https://github.com/TDRobertson/Machine-Learning-Projects.git)">Report Bug</a>
-
-  <a href="[https://github.com/TDRobertson/Machine-Learning-Projects/issues](https://github.com/TDRobertson/Machine-Learning-Projects.git)">Request Feature</a>
-</p>
-
 <!-- ![Contributors](https://img.shields.io/github/contributors/TDRobertson/Machine-Learning-Projects?color=dark-green)
 ![Forks](https://img.shields.io/github/forks/TDRobertson/Machine-Learning-Projects?style=social)
 ![Stargazers](https://img.shields.io/github/stars/TDRobertson/Machine-Learning-Projects?style=social)

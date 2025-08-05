@@ -14,7 +14,7 @@
 ## Project Overview
 
 Welcome to my **Machine Learning Projects Repository**. This Repository contains various projects demonstrating core concepts and theories in **machine learning**, **deep learning**, **natural language processing (NLP)**, and eventually **computer vision**. 
-It will eventually includes both **deployed applications** (built using **Flask**) and **GUI-based apps** (using **Tkinter**) for select projects. The projects  demonstrate the potential of machine learning across various domains, including medical diagnosis, 
+It will eventually include both **deployed applications**  and **GUI-based apps** for select projects. The projects  demonstrate the potential of machine learning across various domains, including medical diagnosis, 
 human activity recognition, image processing, and more.
 
 ## Project List

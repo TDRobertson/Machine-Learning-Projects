@@ -9,12 +9,12 @@
   <a href="[https://github.com/TDRobertson/Machine-Learning-Projects/issues](https://github.com/TDRobertson/Machine-Learning-Projects.git)">Request Feature</a>
 </p>
 
-![Contributors](https://img.shields.io/github/contributors/TDRobertson/Machine-Learning-Projects?color=dark-green)
+<!-- ![Contributors](https://img.shields.io/github/contributors/TDRobertson/Machine-Learning-Projects?color=dark-green)
 ![Forks](https://img.shields.io/github/forks/TDRobertson/Machine-Learning-Projects?style=social)
 ![Stargazers](https://img.shields.io/github/stars/TDRobertson/Machine-Learning-Projects?style=social)
 ![Issues](https://img.shields.io/github/issues/TDRobertson/Machine-Learning-Projects)
 ![License](https://img.shields.io/github/license/TDRobertson/Machine-Learning-Projects)
-
+-->
 ----
 
 ## Project Overview
@@ -32,7 +32,7 @@ Here’s a detailed list of all projects included in this repository:
 | **NLP Tweet Analysis                        | Collaborative project working on disaster tweet classification analysis using pipelined classifiers, visualizers, and HPC Parsing                              | [NLP Tweet Analysis](https://github.com/CSC-4260-Advanced-Data-Science-Project/NLP_Disaster_Tweets.git)
 | **Email Tone Sentiment Analyzer**           | Jupyter notebook containing the code used for email sentiment and tonality classification with visualizers                                                     | [Email Analyzer](https://github.com/TDRobertson/CSC_5240_Email_Tone_and_Sentiment_Analysis) |
 | **Student Referral Prediction**             | A collaborative project featuring Various ML Classification models pipelined for model prediction on school datasets in disciplinary referral predictions      | [Student Referral Classifiers](https://github.com/TDRobertson/student-referral-predictor.git) |
-| **Diabetes Patient Prediction**             | A collaborative project featuing a classification model used in the prediction of diabetic patients of Prima Indian descent from a kaggle dataset              | [Diabetes Prediction Classifier](git@github.com:TDRobertson/Diabetes-Patient-Predictor-R.git) |
+| **Diabetes Patient Prediction**             | A collaborative project featuing a classification model used in the prediction of diabetic patients of Prima Indian descent from a kaggle dataset              | [Diabetes Prediction Classifier](https://github.com/TDRobertson/Diabetes-Patient-Predictor-R.git) |
 
 
 ## Technologies Used

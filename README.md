@@ -23,10 +23,11 @@ Here’s a detailed list of all projects included in this repository:
 
 | Project Name                                | Description                                                                                                                                                    | Link |
 |---------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|------|
-| **NLP Tweet Analysis                        | Collaborative project working on disaster tweet classification analysis using pipelined classifiers, visualizers, and HPC Parsing                              | [NLP Tweet Analysis](https://github.com/CSC-4260-Advanced-Data-Science-Project/NLP_Disaster_Tweets.git)
+| **NLP Tweet Analysis**                        | Collaborative project working on disaster tweet classification analysis using pipelined classifiers, visualizers, and HPC Parsing                              | [NLP Tweet Analysis](https://github.com/CSC-4260-Advanced-Data-Science-Project/NLP_Disaster_Tweets.git)
 | **Email Tone Sentiment Analyzer**           | Jupyter notebook containing the code used for email sentiment and tonality classification with visualizers                                                     | [Email Analyzer](https://github.com/TDRobertson/Machine-Learning-Projects/tree/main/email-tone-sentiment-analysis) |
 | **Student Referral Prediction**             | A collaborative project featuring Various ML Classification models pipelined for model prediction on school datasets in disciplinary referral predictions      | [Student Referral Classifiers](https://github.com/TDRobertson/student-referral-predictor.git) |
 | **Diabetes Patient Prediction**             | A collaborative project featuing a classification model used in the prediction of diabetic patients of Prima Indian descent from a kaggle dataset              | [Diabetes Prediction Classifier](https://github.com/TDRobertson/Diabetes-Patient-Predictor-R.git) |
+| **AI Agent (Gemini-based LLM Agent)**       | A Boot.dev-inspired LLM agent that uses Google's Gemini via `google-genai` to generate responses to user prompts from the command line                        | [AI Agent](https://github.com/TDRobertson/Machine-Learning-Projects/tree/main/ai-agent) |
 
 
 ## Technologies Used
@@ -38,12 +39,14 @@ This repository includes a wide range of technologies and tools used in various 
   - Machine Learning: scikit-learn, TensorFlow, PyTorch, Keras
   - Deep Learning: CNN, RNN, 
   - NLP: Natural Language Toolkit (NLTK), SpaCy
+  - LLMs: Google Gemini via `google-genai`
   - Image Processing: To be implemented
   - Web Development: To be implemented in Flask
   - GUI Development: To be implemented 
   
 - **Tools & Platforms:** 
   - Google Colab, Jupyter Notebooks
+  - Google AI Studio / Gemini API (via `google-genai`)
   - Git and GitHub for version control
 
 ## Contributing 

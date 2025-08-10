@@ -77,7 +77,7 @@ For major changes, please open an issue first to discuss what you would like to 
 
 ## Project Structure
 
-Most projects follows a consistent structure for easy navigation and understanding:
+Most Data Science projects will follow a consistent structure for easy navigation and understanding:
 ```plaintext
 ProjectName/
 │
